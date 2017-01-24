@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		84D594301E373FC90080938E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5942F1E373FC90080938E /* AppDelegate.swift */; };
-		84D594321E373FC90080938E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D594311E373FC90080938E /* ViewController.swift */; };
+		84D594321E373FC90080938E /* FullCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D594311E373FC90080938E /* FullCollectionViewController.swift */; };
 		84D594351E373FC90080938E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D594331E373FC90080938E /* Main.storyboard */; };
 		84D594381E373FC90080938E /* lab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84D594361E373FC90080938E /* lab.xcdatamodeld */; };
 		84D5943A1E373FC90080938E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D594391E373FC90080938E /* Assets.xcassets */; };
 		84D5943D1E373FC90080938E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D5943B1E373FC90080938E /* LaunchScreen.storyboard */; };
 		84D594481E373FC90080938E /* labUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D594471E373FC90080938E /* labUITests.swift */; };
+		84D594541E3742BC0080938E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D594531E3742BC0080938E /* UIKit.framework */; };
+		84D594561E3748090080938E /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D594551E3748090080938E /* CustomCollectionViewCell.swift */; };
+		84D5945A1E3753210080938E /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D594591E3753210080938E /* ItemViewController.swift */; };
+		84D5946C1E376B040080938E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D594681E376A330080938E /* Realm.framework */; };
+		84D5946F1E376B080080938E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D594691E376A330080938E /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +34,7 @@
 /* Begin PBXFileReference section */
 		84D5942C1E373FC80080938E /* lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D5942F1E373FC90080938E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84D594311E373FC90080938E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84D594311E373FC90080938E /* FullCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCollectionViewController.swift; sourceTree = "<group>"; };
 		84D594341E373FC90080938E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D594371E373FC90080938E /* lab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lab.xcdatamodel; sourceTree = "<group>"; };
 		84D594391E373FC90080938E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +43,11 @@
 		84D594431E373FC90080938E /* labUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = labUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D594471E373FC90080938E /* labUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labUITests.swift; sourceTree = "<group>"; };
 		84D594491E373FC90080938E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D594531E3742BC0080938E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84D594551E3748090080938E /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		84D594591E3753210080938E /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		84D594681E376A330080938E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = realm/Realm.framework; sourceTree = "<group>"; };
+		84D594691E376A330080938E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = realm/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D5946C1E376B040080938E /* Realm.framework in Frameworks */,
+				84D5946F1E376B080080938E /* RealmSwift.framework in Frameworks */,
+				84D594541E3742BC0080938E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +77,7 @@
 				84D5942E1E373FC90080938E /* lab */,
 				84D594461E373FC90080938E /* labUITests */,
 				84D5942D1E373FC80080938E /* Products */,
+				84D594521E3742BB0080938E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,8 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				84D5942F1E373FC90080938E /* AppDelegate.swift */,
-				84D594311E373FC90080938E /* ViewController.swift */,
+				84D594591E3753210080938E /* ItemViewController.swift */,
+				84D594311E373FC90080938E /* FullCollectionViewController.swift */,
 				84D594331E373FC90080938E /* Main.storyboard */,
+				84D594551E3748090080938E /* CustomCollectionViewCell.swift */,
 				84D594391E373FC90080938E /* Assets.xcassets */,
 				84D5943B1E373FC90080938E /* LaunchScreen.storyboard */,
 				84D5943E1E373FC90080938E /* Info.plist */,
@@ -97,6 +113,16 @@
 				84D594491E373FC90080938E /* Info.plist */,
 			);
 			path = labUITests;
+			sourceTree = "<group>";
+		};
+		84D594521E3742BB0080938E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84D594681E376A330080938E /* Realm.framework */,
+				84D594691E376A330080938E /* RealmSwift.framework */,
+				84D594531E3742BC0080938E /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +175,7 @@
 				TargetAttributes = {
 					84D5942B1E373FC80080938E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q282ZS6QFC;
 						ProvisioningStyle = Automatic;
 					};
 					84D594421E373FC90080938E = {
@@ -202,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D594321E373FC90080938E /* ViewController.swift in Sources */,
+				84D594321E373FC90080938E /* FullCollectionViewController.swift in Sources */,
 				84D594301E373FC90080938E /* AppDelegate.swift in Sources */,
+				84D5945A1E3753210080938E /* ItemViewController.swift in Sources */,
 				84D594381E373FC90080938E /* lab.xcdatamodeld in Sources */,
+				84D594561E3748090080938E /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +372,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q282ZS6QFC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/realm",
+				);
 				INFOPLIST_FILE = lab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swiftlabs.lab;
@@ -355,6 +389,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q282ZS6QFC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/realm",
+				);
 				INFOPLIST_FILE = lab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swiftlabs.lab;
